@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <h1>BMI Calculator</h1>
+
+        <form action="/calculate" method="POST">
+            <input type="number" name=" Weight" placeholder="Weight (kg)" required>
+            <input type="number" name=" Height" placeholder="Heigh (cm)" required>
+            <button type = "submit">What is my BMI!</button>
+        </form>
+        {% if bmi %}
+        <p>Your BMI is {{bmi}}</p>
+        {% endif %}
+    </body>
+</html>
+
+# I used A.I help to inde4rstand the coioncept and guide me on this project
